@@ -1,0 +1,263 @@
+html, body {
+  margin: 0;
+  padding-bottom: 45px;
+  height: 100%;
+  background-color: #343338;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+#about img {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#about img.loaded {
+  opacity: 1;
+}
+
+.col-sm-6 {
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.col-sm-6.loaded {
+  opacity: 1;
+}
+
+.navbar {
+  font-size: 12px;
+  line-height: 1.42857143;
+  letter-spacing: 4px;
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+  padding-top: 10px;
+}
+
+.container>.navbar-header {
+  height: 65px;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  padding-right: 0;
+}
+
+.navbar-text {
+  font-size: 18px;
+  margin-top: 8px;
+  padding-left: 15px;
+  margin-left: 0;
+}
+
+.navbar-text a:hover {
+  color: #fff;
+}
+
+.navbar-text a, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  margin-bottom: 35px;
+  padding: 0 50px;
+}
+
+section:last-of-type {
+  margin-bottom: 10px;
+}
+
+main {
+  position: relative;
+  box-shadow: 5px 0px 100px rgba(45, 108, 174, 1);
+  background-color: #fff;
+}
+
+#about {
+  padding-top: 15px;
+  margin-top: 80px; 
+ }
+
+p.lead {
+  font-size: 18px;
+  text-align: center;
+}
+
+#bioPic {
+  border-radius: 50%;
+  width: 150px;
+  margin: 20px auto 15px auto;
+  display: block;
+}
+
+#portfolio .row {
+  position: relative;
+ 
+}
+
+#portfolio a {
+  box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
+  transition: box-shadow 0.75s, border 1s;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+#portfolio a:hover {
+  box-shadow: 5px 0px 40px rgba(0,0,0, 0.5);
+}
+
+footer {
+  position: relative;
+  z-index: 10;
+  
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  border-color: rgb(8, 8, 8);
+  color: rgb(157, 157, 157);
+  padding: 10px 0 20px 0;
+  box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.75);
+}
+
+footer a {
+  margin: 0 1% 0 1%;
+}
+
+a {
+  transition: color 1s;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer a, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
+
+#byLine {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0px 20% 0px 20%;
+  text-align: center;
+  color: #626674;
+  opacity: 0.2;
+  transition: opacity 1s;
+}
+
+#byLine p {
+  opacity: 0.3;
+  transition: opacity 1s;
+}
+#byLine hr {
+  border-color: #dad2d2;
+}
+
+#byLine p:hover {
+  opacity: 0.7;
+}
+
+#byLine:hover {
+  opacity: 1;
+}
+
+#byLine a, #byLine p, #byLine hr {
+  margin: 0;
+}
+
+#byLine a:hover {
+  color: #4da3ec;
+}
+
+#byLine:hover {
+  opacity: 0.9;
+}
+
+.img-responsive {
+  margin: auto;
+}
+
+#toTopDiv {
+  position: fixed;
+  z-index: 50;
+  right: 0;
+  bottom: 0;
+  margin: 0 3% 3% 0;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  background-color: white;
+  border-radius: 20%;
+}
+
+#toTopDiv:hover {
+  opacity: 0.99;
+}
+
+.fa-chevron-up {
+  position: relative;
+  z-index: 1;
+  color: #337ab7;
+  transition: color 0.5s ease-out;
+}
+
+.fa-chevron-up:hover {
+  color: #4da3ec;
+}
+
+@media (min-width: 512px) {
+  p.lead {
+    text-align: left;
+  }
+  
+  #bioPic {
+    float: right;
+     margin: 20px 20px 20px 30px;
+  } 
+  
+  #portfolio a {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    box-shadow: 5px 0px 5000px rgba(45, 108, 174, 0.8);
+  }
+  
+  p.lead {
+    font-size: 21px;
+  }
+  
+  #portfolio a {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  #toTopDiv {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .max{
+    max-width: 1020px;
+  }
+  
+  .nav>li {
+    text-transform: uppercase;
+  }
+  
+  #about {
+    padding-top: 35px;
+  }
+  
+  main {
+    box-shadow: 5px 0px 10000px rgba(45, 108, 174, 0.5);
+  }
+}

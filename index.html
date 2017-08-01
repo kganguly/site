@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Kaushik Ganguly - Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://use.fontawesome.com/42b46179c6.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" >
+</head>
+
+<body>
+  
+  <script>
+    /*Smooth image loading inlined.*/
+    function imgLoaded(img) {
+      img.className += img.className ? ' loaded' : 'loaded';
+    }
+    
+    function thumbLoaded(img) {
+      var thumb = img.parentNode.parentNode;
+      imgLoaded(thumb);
+    }
+  </script>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+        <a class="navbar-brand" href="#">Kaushik Ganguly</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <span class="navbar-text">
+            <a href="https://www.freecodecamp.com/kganguly" target="_blank">
+              <span class="fa fa-stack">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-free-code-camp fa-stack-1x" title="freeCodeCamp"></i>
+               </span>
+            <span class="sr-only">freeCodeCamp</span>
+            </a>
+            <a href="https://github.com/kganguly" target="_blank">
+              <span class="fa fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                 <i class="fa fa-github fa-stack-1x" title="GitHub"></i>
+              </span>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kaushik-ganguly-60bbb5" target="_blank">
+              <span class="fa fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x" title="LinkedIn"></i>  
+              </span>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            </span>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#about" class="scrollable">About</a></li>
+          <li><a href="#portfolio" class="scrollable">Portfolio</a></li>
+          <li><a href="#contact" class="scrollable">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container max" id="wrapper">
+    <section id="about" class="">
+      <img src="https://www.kganguly.com/img/headshot.jpg" alt="" onload="imgLoaded(this)" class="" id="bioPic">
+      <p class="lead">Front End Web Developer with a long history in the tech world.  Experience ranging from jack of all trades at a scrappy web startup to experienced technical consultant for enterprise software and managed cloud solutions.  The web applications below are explorations into different functionality and usability with responsive web design baked in.</p>  
+    </section>
+
+    <section id="portfolio">
+      <header>
+        <h2>Portfolio</h2>
+      </header>
+      <hr>
+      
+    </section>
+    <div id="byLine">
+      <hr>
+      <p>Created by <a href="https://www.kganguly.com" target="_blank">Kaushik Ganguly</a>.</p>
+    </div>
+  </main>
+
+  <div id='toTopDiv' class='text-center'>
+    <a href='#' id='toTop' class='text-center'>
+      <i class='fa fa-chevron-up fa-5x'></i>
+    </a>
+  </div>
+
+  <footer class="text-center">
+    <div class="container" id="contact">
+      <div class="row text-center">
+        <!--    <span class="text-center">
+ <!--   <div class="col-sm-6">
+      <div class="row">
+        <div class="hidden-xs text-center">
+      <h3>Mail</h3>
+        </div>
+      </div>
+      <div class="row text-center">-->
+        <!--
+        <a href="#">
+          <span class="fa fa-stack fa-2x">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="glyphicon glyphicon-envelope fa-stack-1x" title="Send Email"></i>
+            </span>
+          <span class="sr-only">Send Email</span>
+        </a><!--
+      </div>
+    </div>-->
+        <!-- <div class="col-sm-6 col-sm-offset-6">
+      <div class="row">
+        <div class="hidden-xs text-center">
+          <h3>Around the Web</h3></div>
+      </div>
+      <div class="row text-center">-->
+        <a href="https://www.freecodecamp.com/kganguly" target="_blank">
+          <span class="fa fa-stack fa-2x">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-free-code-camp fa-stack-1x" title="freeCodeCamp"></i>
+            </span>
+          <span class="sr-only">freeCodeCamp</span>
+        </a>
+        <a href="https://github.com/kganguly" target="_blank">
+          <span class="fa fa-stack fa-2x">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x" title="GitHub"></i>
+          </span>
+          <span class="sr-only">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/kaushik-ganguly-60bbb5" target="_blank">
+          <span class="fa fa-stack fa-2x">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x" title="LinkedIn"></i>  
+          </span>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+        <!-- </span>-->
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Borlaug 
+   <div class="col-sm-6 text-center">
+          <a href="http://codepen.io/kganguly/full/egJqew/" target="_blank" class="thumbnail">
+            <img src="https://lh3.googleusercontent.com/MEQXkzIqGS1cNH4Rktf46fdss2No1fMqBbhjiiIJEHGgRiLf5eodFT0_OurlXvABNplA6wuHTgFHSb2Sv60u8PTBMz5J1kl4FH_TsN1kMxoyjZqQcVqTHhUv4hufG6DDUfydHrvb6GMeU1RzEYZJzpl5kR6NzaWCjRb2Di15m6cBgzU7YTs5uPJ5aGFNcWUVBRGOv01gvcIytijXBKahX1tP81ckulG16_73PSVXmCozcfpmxc-SHs6LBS_9iNOJFLa5fFCpaM-0XyOEajITS_o4WLcHM7CAWnQp6hRGGY-LnbIpOyqsExrT8x6f8-Y9oUXrPi_eT-TYinfvPqctezF5WpCV7PE_WwLaNEw6uSo_ZrTQxIppzCqTiTL6I0kEKqA7JvTVRDQiUaJxCXaBYMdvzSJxMqwzsQXyCWyFYTKduB0RJdtTzeb2t2YN1a98J3hYllQPlgQmoMqUNslJl4zZyPRpsrzgBmTDQIVNmZj4-O9dTGHsQgbISeIS11P1uPEyNbAbyPzdjeGX-gjnc-inXUfIL4W3FrrJdUJH-y2FmLBZLeJcMH4_-3lMpszGrx88RbPWaz1kYXndcoISKKmTpF6QT9AKu8dyYz90BdmGFHYN=w488-h220-no"
+              class="img-responsive">
+          </a>
+        </div>
+-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
