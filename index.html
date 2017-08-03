@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta charset="UTF-8">
   <title>Kaushik Ganguly - Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://use.fontawesome.com/42b46179c6.css'>
+  <link rel='stylesheet prefetch' href='https://use.fontawesome.com/42b46179c6.css'>
+  <link rel="stylesheet" href="css/style.css">
 
-      <link rel="stylesheet" href="css/style.css">
+  <script defer src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script defer src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script defer src="js/index.js"></script>
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico" >
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-  
+
   <script>
     /*Smooth image loading inlined.*/
     function imgLoaded(img) {
       img.className += img.className ? ' loaded' : 'loaded';
     }
-    
+
     function thumbLoaded(img) {
       var thumb = img.parentNode.parentNode;
-      imgLoaded(thumb);
+      if (thumb.className.match(/^col-sm-6/)) {
+        imgLoaded(thumb);
+      }
     }
   </script>
 
@@ -77,7 +83,9 @@
   <main class="container max" id="wrapper">
     <section id="about" class="">
       <img src="https://www.kganguly.com/img/headshot.jpg" alt="" onload="imgLoaded(this)" class="" id="bioPic">
-      <p class="lead">Front End Web Developer with a long history in the tech world.  Experience ranging from jack of all trades at a scrappy web startup to experienced technical consultant for enterprise software and managed cloud solutions.  The web applications below are explorations into different functionality and usability with responsive web design baked in.</p>  
+      <p class="lead">Front End Web Developer with a long history in the tech world. Experience ranging from jack of all trades at a scrappy
+        web startup to experienced technical consultant for enterprise software and managed cloud solutions. The web applications
+        below are explorations into different functionality and usability with responsive web design baked in.</p>
     </section>
 
     <section id="portfolio">
@@ -85,7 +93,7 @@
         <h2>Portfolio</h2>
       </header>
       <hr>
-      
+
     </section>
     <div id="byLine">
       <hr>
@@ -152,19 +160,26 @@
     </div>
   </footer>
 
-
-<!-- Borlaug 
-   <div class="col-sm-6 text-center">
-          <a href="http://codepen.io/kganguly/full/egJqew/" target="_blank" class="thumbnail">
-            <img src="https://lh3.googleusercontent.com/MEQXkzIqGS1cNH4Rktf46fdss2No1fMqBbhjiiIJEHGgRiLf5eodFT0_OurlXvABNplA6wuHTgFHSb2Sv60u8PTBMz5J1kl4FH_TsN1kMxoyjZqQcVqTHhUv4hufG6DDUfydHrvb6GMeU1RzEYZJzpl5kR6NzaWCjRb2Di15m6cBgzU7YTs5uPJ5aGFNcWUVBRGOv01gvcIytijXBKahX1tP81ckulG16_73PSVXmCozcfpmxc-SHs6LBS_9iNOJFLa5fFCpaM-0XyOEajITS_o4WLcHM7CAWnQp6hRGGY-LnbIpOyqsExrT8x6f8-Y9oUXrPi_eT-TYinfvPqctezF5WpCV7PE_WwLaNEw6uSo_ZrTQxIppzCqTiTL6I0kEKqA7JvTVRDQiUaJxCXaBYMdvzSJxMqwzsQXyCWyFYTKduB0RJdtTzeb2t2YN1a98J3hYllQPlgQmoMqUNslJl4zZyPRpsrzgBmTDQIVNmZj4-O9dTGHsQgbISeIS11P1uPEyNbAbyPzdjeGX-gjnc-inXUfIL4W3FrrJdUJH-y2FmLBZLeJcMH4_-3lMpszGrx88RbPWaz1kYXndcoISKKmTpF6QT9AKu8dyYz90BdmGFHYN=w488-h220-no"
-              class="img-responsive">
-          </a>
+  <div id="modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="exampleModalLabel">New message</h3>
         </div>
--->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+        <div class="modal-body">
+          <span class="modalInfo">Would you like to play as X's or O's?</span><br>
+        </div>
+        <div class="modal-footer">
+          <button id="appButton" type="button" class="btn btn-info">App</button>
+          <button id="codeButton" type="button" class="btn btn-info">Code</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="js/index.js"></script>
+
 
 </body>
+
 </html>

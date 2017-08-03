@@ -1,8 +1,16 @@
-html, body {
+html,
+body {
   margin: 0;
   padding-bottom: 45px;
   height: 100%;
   background-color: #343338;
+}
+
+.centeredContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #wrapper {
@@ -33,7 +41,7 @@ html, body {
   font-size: 12px;
   line-height: 1.42857143;
   letter-spacing: 4px;
-  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.75);
   padding-top: 10px;
 }
 
@@ -57,7 +65,10 @@ html, body {
   color: #fff;
 }
 
-.navbar-text a, a:hover, a:active, a:visited {
+.navbar-text a,
+a:hover,
+a:active,
+a:visited {
   text-decoration: none;
 }
 
@@ -79,8 +90,8 @@ main {
 
 #about {
   padding-top: 15px;
-  margin-top: 80px; 
- }
+  margin-top: 80px;
+}
 
 p.lead {
   font-size: 18px;
@@ -96,30 +107,28 @@ p.lead {
 
 #portfolio .row {
   position: relative;
- 
 }
 
 #portfolio a {
-  box-shadow: 0px 3px 30px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.75s, border 1s;
   margin-left: -40px;
   margin-right: -40px;
 }
 
 #portfolio a:hover {
-  box-shadow: 5px 0px 40px rgba(0,0,0, 0.5);
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
 footer {
   position: relative;
   z-index: 10;
-  
   width: 100%;
   background-color: rgb(34, 34, 34);
   border-color: rgb(8, 8, 8);
   color: rgb(157, 157, 157);
   padding: 10px 0 20px 0;
-  box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.75);
 }
 
 footer a {
@@ -134,7 +143,10 @@ footer a:hover {
   color: #fff;
 }
 
-footer a, a:hover, a:active, a:visited {
+footer a,
+a:hover,
+a:active,
+a:visited {
   text-decoration: none;
 }
 
@@ -154,6 +166,7 @@ footer a, a:hover, a:active, a:visited {
   opacity: 0.3;
   transition: opacity 1s;
 }
+
 #byLine hr {
   border-color: #dad2d2;
 }
@@ -166,7 +179,9 @@ footer a, a:hover, a:active, a:visited {
   opacity: 1;
 }
 
-#byLine a, #byLine p, #byLine hr {
+#byLine a,
+#byLine p,
+#byLine hr {
   margin: 0;
 }
 
@@ -209,16 +224,66 @@ footer a, a:hover, a:active, a:visited {
   color: #4da3ec;
 }
 
+.close {
+  font-size: 30px;
+}
+
+.modal-content {
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: rgba(52, 51, 56, 0.8);
+}
+
+.modal-header {
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-footer {
+  border-radius: 0 0 10px 10px;
+}
+
+.modal-header>button {
+  color: white;
+}
+
+.modal-body {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+  font-size: 18px;
+}
+
+.modal-body>img {
+  margin-top: 10px;
+}
+
+.modal-footer {
+  border-bottom: none;
+}
+
+.modal-footer>button {
+  background-color: #337ab7;
+  margin-right: 15px;
+  border-color: #337ab7;
+}
+
+.modal-footer>button:hover {
+  background-color: #4da3ec;
+}
+
 @media (min-width: 512px) {
   p.lead {
     text-align: left;
   }
-  
   #bioPic {
     float: right;
-     margin: 20px 20px 20px 30px;
-  } 
-  
+    margin: 20px 20px 20px 30px;
+  }
   #portfolio a {
     margin-left: -20px;
     margin-right: -20px;
@@ -229,34 +294,28 @@ footer a, a:hover, a:active, a:visited {
   main {
     box-shadow: 5px 0px 5000px rgba(45, 108, 174, 0.8);
   }
-  
   p.lead {
     font-size: 21px;
   }
-  
   #portfolio a {
     margin-left: 0;
     margin-right: 0;
   }
-  
   #toTopDiv {
     opacity: 0.5;
   }
 }
 
 @media (min-width: 1200px) {
-  .max{
+  .max {
     max-width: 1020px;
   }
-  
   .nav>li {
     text-transform: uppercase;
   }
-  
   #about {
     padding-top: 35px;
   }
-  
   main {
     box-shadow: 5px 0px 10000px rgba(45, 108, 174, 0.5);
   }
