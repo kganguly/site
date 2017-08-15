@@ -90,11 +90,11 @@ portfolioArray = [{
   img: "https://www.kganguly.com/img/WikiSearch_Thumb.png",
   desc: "A Wikipedia search interface with 'Load more...' options.  An Exploration into incremental loading and bootstrap with responsive web design."
 }, {
-  title: "Twitch Stream Tracker",
-  appUrl: "http://codepen.io/kganguly/full/QvLzpe/",
-  codeUrl: "http://codepen.io/kganguly/pen/QvLzpe/",
-  img: "https://www.kganguly.com/img/Twitch_Thumb.png",
-  desc: "An app that uses the Twitch API to get the current status of users.  I used this as an eploration into Promises and asynchronous coding.  While not necessary at this scale, it would scale well.  Responsive web design baked in."
+  title: "Simon",
+  appUrl: "https://kganguly.github.io/FCC-Simon/",
+  codeUrl: "https://github.com/kganguly/FCC-Simon",
+  img: "https://www.kganguly.com/img/Simon.png",
+  desc: "A Simon game similar to the classic.  Mobile friendly."
 }, {
   title: "Calculator",
   appUrl: "https://kganguly.github.io/FCC-Calculator/",
@@ -102,17 +102,23 @@ portfolioArray = [{
   img: "https://www.kganguly.com/img/Calculator_Thumb.png",
   desc: "A Calculator with operator precedence.  This became an exploration into thorough unit testing with Jasmine and Karma."
 }, {
-  title: "Pomodoro Clock",
-  appUrl: "https://kganguly.github.io/FCC-Pomodoro/",
-  codeUrl: "https://github.com/kganguly/FCC-Pomodoro",
-  img: "https://www.kganguly.com/img/Pomodoro_Thumb.png",
-  desc: "This app is a configurable timer to schedule regular breaks.  This lead to exploring linear gradients and audio on mobile browsers.  Responsive web design baked in as usual."
+  title: "Twitch Stream Tracker",
+  appUrl: "http://codepen.io/kganguly/full/QvLzpe/",
+  codeUrl: "http://codepen.io/kganguly/pen/QvLzpe/",
+  img: "https://www.kganguly.com/img/Twitch_Thumb.png",
+  desc: "An app that uses the Twitch API to get the current status of users.  I used this as an eploration into Promises and asynchronous coding.  While not necessary at this scale, it would scale well.  Responsive web design baked in."
 }, {
   title: "Tic-Tac-Toe",
   appUrl: "https://kganguly.github.io/FCC-Tic-Tac-Toe/",
   codeUrl: "https://github.com/kganguly/FCC-Tic-Tac-Toe",
   img: "https://www.kganguly.com/img/Tic-Tac-Toe_Thumb.png",
   desc: "Tic-Tac-Toe against a simple computer opponent."
+}, {
+  title: "Pomodoro Clock",
+  appUrl: "https://kganguly.github.io/FCC-Pomodoro/",
+  codeUrl: "https://github.com/kganguly/FCC-Pomodoro",
+  img: "https://www.kganguly.com/img/Pomodoro_Thumb.png",
+  desc: "This app is a configurable timer to schedule regular breaks.  This lead to exploring linear gradients and audio on mobile browsers.  Responsive web design baked in as usual."
 }, {
   title: "Random Quote Generator",
   appUrl: "http://codepen.io/kganguly/full/dNegKb/",
