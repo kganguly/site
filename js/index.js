@@ -79,14 +79,14 @@ function scrollToElement(element) {
 
 portfolioArray = [{
   title: "Local Weather",
-  appUrl: "https://codepen.io/kganguly/full/OWKYqL/",
-  codeUrl: "https://codepen.io/kganguly/pen/OWKYqL",
+  appUrl: "https://kganguly.github.io/FCC-Local-Weather/",
+  codeUrl: "https://github.com/kganguly/FCC-Local-Weather",
   img: "https://www.kganguly.com/img/LocalWeather_Thumb_Zoom.png",
   desc: "A Local Weather app using Google Maps and Weather Underground APIs.  An early exploration into composing with multiple APIs and responsive web design."
 }, {
   title: "Wikipedia Search",
-  appUrl: "http://codepen.io/kganguly/full/ZeeEgr/",
-  codeUrl: "http://codepen.io/kganguly/pen/ZeeEgr/",
+  appUrl: "https://kganguly.github.io/FCC-Wikipedia-Search/",
+  codeUrl: "https://github.com/kganguly/FCC-Wikipedia-Search",
   img: "https://www.kganguly.com/img/WikiSearch_Thumb.png",
   desc: "A Wikipedia search interface with 'Load more...' options.  An Exploration into incremental loading and bootstrap with responsive web design."
 }, {
@@ -103,8 +103,8 @@ portfolioArray = [{
   desc: "A Calculator with operator precedence.  This became an exploration into thorough unit testing with Jasmine and Karma."
 }, {
   title: "Twitch Stream Tracker",
-  appUrl: "http://codepen.io/kganguly/full/QvLzpe/",
-  codeUrl: "http://codepen.io/kganguly/pen/QvLzpe/",
+  appUrl: "https://kganguly.github.io/FCC-Twitch-Stream-Tracker/",
+  codeUrl: "https://github.com/kganguly/FCC-Twitch-Stream-Tracker",
   img: "https://www.kganguly.com/img/Twitch_Thumb.png",
   desc: "An app that uses the Twitch API to get the current status of users.  I used this as an eploration into Promises and asynchronous coding.  While not necessary at this scale, it would scale well.  Responsive web design baked in."
 }, {
@@ -121,8 +121,8 @@ portfolioArray = [{
   desc: "This app is a configurable timer to schedule regular breaks.  This lead to exploring linear gradients and audio on mobile browsers.  Responsive web design baked in as usual."
 }, {
   title: "Random Quote Generator",
-  appUrl: "http://codepen.io/kganguly/full/dNegKb/",
-  codeUrl: "http://codepen.io/kganguly/pen/dNegKb/",
+  appUrl: "https://kganguly.github.io/FCC-Random-Quote-Machine/",
+  codeUrl: "https://github.com/kganguly/FCC-Random-Quote-Machine",
   img: "https://www.kganguly.com/img/RandomQuote_Thumb_Zoom.png",
   desc: "A simple random quote generator.  An early exploration into composing with APIs and responsive web design."
 }];
